@@ -1,4 +1,4 @@
-package com.eyepax.eyepaxtest.ui.main
+package com.eyepax.eyepax.ui.main
 
 import android.content.Context
 import android.graphics.Color
@@ -7,9 +7,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import com.eyepax.eyepaxtest.R
-import com.eyepax.eyepaxtest.databinding.LayoutCategoryItemBinding
-import com.eyepax.eyepaxtest.utils.CATEGORY_LIST
+import com.eyepax.eyepax.R
+import com.eyepax.eyepax.databinding.LayoutCategoryItemBinding
+import com.eyepax.eyepax.utils.CATEGORY_LIST
 
 class LanguageRecyclerAdapter(val context: Context) :
     RecyclerView.Adapter<LanguageRecyclerAdapter.LanguageHolder>() {
@@ -20,7 +20,7 @@ class LanguageRecyclerAdapter(val context: Context) :
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): LanguageRecyclerAdapter.LanguageHolder {
+    ): LanguageHolder {
 
         val itemBinding =
             LayoutCategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -34,7 +34,7 @@ class LanguageRecyclerAdapter(val context: Context) :
         notifyDataSetChanged()
     }
 
-    override fun onBindViewHolder(holder: LanguageRecyclerAdapter.LanguageHolder, position: Int) {
+    override fun onBindViewHolder(holder: LanguageHolder, position: Int) {
         val category: String = CATEGORY_LIST[position]
         holder.bind(category)
     }

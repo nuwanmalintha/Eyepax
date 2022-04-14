@@ -1,6 +1,5 @@
-package com.eyepax.eyepaxtest.ui.search
+package com.eyepax.eyepax.ui.search
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Color
 import android.os.Build
@@ -8,9 +7,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import com.eyepax.eyepaxtest.R
-import com.eyepax.eyepaxtest.databinding.LayoutCategoryItemBinding
-import com.eyepax.eyepaxtest.utils.CATEGORY_LIST
+import com.eyepax.eyepax.R
+import com.eyepax.eyepax.databinding.LayoutCategoryItemBinding
 
 class CategoryRecyclerAdapter(val context: Context,val list: List<String>) :
     RecyclerView.Adapter<CategoryRecyclerAdapter.CategoryHolder>() {
@@ -21,7 +19,7 @@ class CategoryRecyclerAdapter(val context: Context,val list: List<String>) :
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): CategoryRecyclerAdapter.CategoryHolder {
+    ): CategoryHolder {
 
         val itemBinding =
             LayoutCategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -35,7 +33,7 @@ class CategoryRecyclerAdapter(val context: Context,val list: List<String>) :
         notifyDataSetChanged()
     }
 
-    override fun onBindViewHolder(holder: CategoryRecyclerAdapter.CategoryHolder, position: Int) {
+    override fun onBindViewHolder(holder: CategoryHolder, position: Int) {
         val category: String = list[position]
         holder.bind(category)
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Eyepax test</string>
+    <string name="app_name">Eyepax</string>
     <string name="network_call_failed">Network call has failed : reason - </string>
     <string name="register">Register</string>
     <string name="login">Login</string>

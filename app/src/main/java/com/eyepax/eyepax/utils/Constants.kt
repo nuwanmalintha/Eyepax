@@ -1,4 +1,4 @@
-package com.eyepax.eyepaxtest.utils
+package com.eyepax.eyepax.utils
 
 //room database name
 const val ROOM_DATABASE_NAME = "eyepax"

@@ -1,8 +1,8 @@
-package com.eyepax.eyepaxtest.utils
+package com.eyepax.eyepax.utils
 
 import android.graphics.Color
 import android.view.View
-import com.eyepax.eyepaxtest.R
+import com.eyepax.eyepax.R
 import com.google.android.material.snackbar.Snackbar
 
 class SnackBars {

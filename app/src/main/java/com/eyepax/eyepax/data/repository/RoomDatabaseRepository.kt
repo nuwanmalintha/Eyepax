@@ -1,7 +1,7 @@
-package com.eyepax.eyepaxtest.data.repository
+package com.eyepax.eyepax.data.repository
 
-import com.eyepax.eyepaxtest.data.entities.User
-import com.eyepax.eyepaxtest.data.local.AppDatabase
+import com.eyepax.eyepax.data.entities.User
+import com.eyepax.eyepax.data.local.AppDatabase
 
 class RoomDatabaseRepository(
     private val roomDatabase: AppDatabase

@@ -1,7 +1,7 @@
-package com.eyepax.eyepaxtest.data.repository
+package com.eyepax.eyepax.data.repository
 
-import com.eyepax.eyepaxtest.data.remote.NewsApiInterface
-import com.eyepax.eyepaxtest.utils.API_KEY
+import com.eyepax.eyepax.data.remote.NewsApiInterface
+import com.eyepax.eyepax.utils.API_KEY
 
 class NewsRepository(
     private val apiService: NewsApiInterface

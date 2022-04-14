@@ -1,11 +1,11 @@
-package com.eyepax.eyepaxtest.data.local
+package com.eyepax.eyepax.data.local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.eyepax.eyepaxtest.data.entities.User
-import com.eyepax.eyepaxtest.utils.ROOM_DATABASE_NAME
+import com.eyepax.eyepax.data.entities.User
+import com.eyepax.eyepax.utils.ROOM_DATABASE_NAME
 
 @Database(entities = [User::class], version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {

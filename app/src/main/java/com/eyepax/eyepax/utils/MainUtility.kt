@@ -1,6 +1,5 @@
-package com.eyepax.eyepaxtest.utils
+package com.eyepax.eyepax.utils
 
-import android.annotation.SuppressLint
 import java.text.SimpleDateFormat
 import java.util.*
 

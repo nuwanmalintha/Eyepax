@@ -1,6 +1,6 @@
-package com.eyepax.eyepaxtest.data.remote
+package com.eyepax.eyepax.data.remote
 
-import com.eyepax.eyepaxtest.data.entities.NewsBase
+import com.eyepax.eyepax.data.entities.NewsBase
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

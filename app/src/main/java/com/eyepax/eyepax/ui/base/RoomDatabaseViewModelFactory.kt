@@ -1,9 +1,9 @@
-package com.eyepax.eyepaxtest.ui.base
+package com.eyepax.eyepax.ui.base
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.eyepax.eyepaxtest.data.repository.RoomDatabaseRepository
+import com.eyepax.eyepax.data.repository.RoomDatabaseRepository
 import java.lang.Exception
 
 class RoomDatabaseViewModelFactory(

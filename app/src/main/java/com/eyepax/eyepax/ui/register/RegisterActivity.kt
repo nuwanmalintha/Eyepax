@@ -1,20 +1,13 @@
-package com.eyepax.eyepaxtest.ui.register
+package com.eyepax.eyepax.ui.register
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.ViewModelProvider
-import com.eyepax.eyepaxtest.R
-import com.eyepax.eyepaxtest.data.entities.User
-import com.eyepax.eyepaxtest.data.local.AppDatabase
-import com.eyepax.eyepaxtest.data.repository.RoomDatabaseRepository
-import com.eyepax.eyepaxtest.databinding.ActivityRegisterBinding
-import com.eyepax.eyepaxtest.databinding.ActivitySplashBinding
-import com.eyepax.eyepaxtest.ui.base.BaseActivity
-import com.eyepax.eyepaxtest.ui.base.RoomDatabaseViewModel
-import com.eyepax.eyepaxtest.ui.base.RoomDatabaseViewModelFactory
-import com.eyepax.eyepaxtest.ui.login.LoginActivity
-import com.eyepax.eyepaxtest.utils.SnackBars
+import com.eyepax.eyepax.R
+import com.eyepax.eyepax.data.entities.User
+import com.eyepax.eyepax.databinding.ActivityRegisterBinding
+import com.eyepax.eyepax.ui.base.BaseActivity
+import com.eyepax.eyepax.ui.login.LoginActivity
+import com.eyepax.eyepax.utils.SnackBars
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

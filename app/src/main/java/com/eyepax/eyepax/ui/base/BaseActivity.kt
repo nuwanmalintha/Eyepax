@@ -1,4 +1,4 @@
-package com.eyepax.eyepaxtest.ui.base
+package com.eyepax.eyepax.ui.base
 
 import android.app.Application
 import android.os.Bundle
@@ -7,8 +7,8 @@ import android.view.MotionEvent
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.eyepax.eyepaxtest.data.local.AppDatabase
-import com.eyepax.eyepaxtest.data.repository.RoomDatabaseRepository
+import com.eyepax.eyepax.data.local.AppDatabase
+import com.eyepax.eyepax.data.repository.RoomDatabaseRepository
 
 open class BaseActivity : AppCompatActivity() {
 

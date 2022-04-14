@@ -1,8 +1,7 @@
-package com.eyepax.eyepaxtest.data.local
+package com.eyepax.eyepax.data.local
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.eyepax.eyepaxtest.data.entities.User
+import com.eyepax.eyepax.data.entities.User
 
 @Dao
 interface UserDao {

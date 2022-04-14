@@ -1,4 +1,4 @@
-package com.eyepax.eyepaxtest.ui.main
+package com.eyepax.eyepax.ui.main
 
 import android.content.Context
 import android.os.Build
@@ -7,12 +7,9 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.eyepax.eyepaxtest.R
-import com.eyepax.eyepaxtest.data.entities.Article
-import com.eyepax.eyepaxtest.databinding.LayoutBreakingNewsItemBinding
-import com.eyepax.eyepaxtest.databinding.LayoutSearchResultsItemBinding
-import com.eyepax.eyepaxtest.ui.main.MainActivity
-import com.eyepax.eyepaxtest.utils.MainUtility
+import com.eyepax.eyepax.data.entities.Article
+import com.eyepax.eyepax.databinding.LayoutBreakingNewsItemBinding
+import com.eyepax.eyepax.utils.MainUtility
 
 class BreakingNewsRecyclerAdapter(private var list: List<Article>, private val context: Context) :
     RecyclerView.Adapter<BreakingNewsRecyclerAdapter.BreakingNewsHolder>() {
@@ -22,7 +19,7 @@ class BreakingNewsRecyclerAdapter(private var list: List<Article>, private val c
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): BreakingNewsRecyclerAdapter.BreakingNewsHolder {
+    ): BreakingNewsHolder {
 
         val itemBinding =
             LayoutBreakingNewsItemBinding.inflate(
@@ -42,7 +39,7 @@ class BreakingNewsRecyclerAdapter(private var list: List<Article>, private val c
 
 
     override fun onBindViewHolder(
-        holder: BreakingNewsRecyclerAdapter.BreakingNewsHolder,
+        holder: BreakingNewsHolder,
         position: Int
     ) {
         val article: Article = list[position]

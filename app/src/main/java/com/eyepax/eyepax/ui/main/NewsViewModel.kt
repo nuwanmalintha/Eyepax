@@ -1,11 +1,11 @@
-package com.eyepax.eyepaxtest.ui.main
+package com.eyepax.eyepax.ui.main
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.eyepax.eyepaxtest.data.entities.NewsBase
-import com.eyepax.eyepaxtest.data.repository.NewsRepository
-import com.eyepax.eyepaxtest.utils.*
+import com.eyepax.eyepax.data.entities.NewsBase
+import com.eyepax.eyepax.data.repository.NewsRepository
+import com.eyepax.eyepax.utils.Resource
 import kotlinx.coroutines.launch
 
 class NewsViewModel(

@@ -1,8 +1,8 @@
-package com.eyepax.eyepaxtest.data.remote
+package com.eyepax.eyepax.data.remote
 
 import android.util.Log
-import com.eyepax.eyepaxtest.BuildConfig
-import com.eyepax.eyepaxtest.utils.BASE_URL
+import com.eyepax.eyepax.BuildConfig
+import com.eyepax.eyepax.utils.BASE_URL
 import okhttp3.HttpUrl
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient

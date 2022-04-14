@@ -1,4 +1,4 @@
-package com.eyepax.eyepaxtest.data.entities
+package com.eyepax.eyepax.data.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

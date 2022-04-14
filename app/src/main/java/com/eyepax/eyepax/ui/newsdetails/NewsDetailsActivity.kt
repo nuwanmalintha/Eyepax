@@ -1,13 +1,10 @@
-package com.eyepax.eyepaxtest.ui.newsdetails
+package com.eyepax.eyepax.ui.newsdetails
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.bumptech.glide.Glide
-import com.eyepax.eyepaxtest.R
-import com.eyepax.eyepaxtest.databinding.ActivityNewsDetailsBinding
-import com.eyepax.eyepaxtest.databinding.ActivitySearchBinding
-import com.eyepax.eyepaxtest.utils.*
+import com.eyepax.eyepax.databinding.ActivityNewsDetailsBinding
+import com.eyepax.eyepax.utils.*
 
 class NewsDetailsActivity : AppCompatActivity() {
 

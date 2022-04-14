@@ -1,8 +1,8 @@
-package com.eyepax.eyepaxtest.ui.main
+package com.eyepax.eyepax.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.eyepax.eyepaxtest.data.repository.NewsRepository
+import com.eyepax.eyepax.data.repository.NewsRepository
 
 class NewsViewModelProviderFactory(
     private val newsRepository: NewsRepository

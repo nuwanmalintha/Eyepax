@@ -1,16 +1,12 @@
-package com.eyepax.eyepaxtest.ui.login
+package com.eyepax.eyepax.ui.login
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.Observer
-import com.eyepax.eyepaxtest.R
-import com.eyepax.eyepaxtest.data.entities.User
-import com.eyepax.eyepaxtest.databinding.ActivityLoginBinding
-import com.eyepax.eyepaxtest.databinding.ActivityRegisterBinding
-import com.eyepax.eyepaxtest.ui.base.BaseActivity
-import com.eyepax.eyepaxtest.ui.main.MainActivity
-import com.eyepax.eyepaxtest.utils.SnackBars
+import com.eyepax.eyepax.R
+import com.eyepax.eyepax.databinding.ActivityLoginBinding
+import com.eyepax.eyepax.ui.base.BaseActivity
+import com.eyepax.eyepax.ui.main.MainActivity
+import com.eyepax.eyepax.utils.SnackBars
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

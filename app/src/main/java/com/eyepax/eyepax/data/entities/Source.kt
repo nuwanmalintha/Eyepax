@@ -1,4 +1,4 @@
-package com.eyepax.eyepaxtest.data.entities
+package com.eyepax.eyepax.data.entities
 
 data class Source(
     val id: String,

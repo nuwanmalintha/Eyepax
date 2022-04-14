@@ -1,9 +1,9 @@
-package com.eyepax.eyepaxtest.ui.base
+package com.eyepax.eyepax.ui.base
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.eyepax.eyepaxtest.data.entities.User
-import com.eyepax.eyepaxtest.data.repository.RoomDatabaseRepository
+import com.eyepax.eyepax.data.entities.User
+import com.eyepax.eyepax.data.repository.RoomDatabaseRepository
 
 class RoomDatabaseViewModel(
     private val repository: RoomDatabaseRepository

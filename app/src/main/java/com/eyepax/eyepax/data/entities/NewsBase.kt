@@ -1,4 +1,6 @@
-package com.eyepax.eyepaxtest.data.entities
+package com.eyepax.eyepax.data.entities
+
+import com.eyepax.eyepax.data.entities.Article
 
 data class NewsBase(
     val articles: List<Article>,

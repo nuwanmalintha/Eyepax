@@ -1,27 +1,23 @@
-package com.eyepax.eyepaxtest.ui.main
+package com.eyepax.eyepax.ui.main
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.eyepax.eyepaxtest.data.entities.Article
-import com.eyepax.eyepaxtest.data.entities.NewsBase
-import com.eyepax.eyepaxtest.data.remote.RetrofitClient
-import com.eyepax.eyepaxtest.data.repository.NewsRepository
-import com.eyepax.eyepaxtest.databinding.ActivityMainBinding
-import com.eyepax.eyepaxtest.ui.base.BaseActivity
-import com.eyepax.eyepaxtest.ui.newsdetails.NewsDetailsActivity
-import com.eyepax.eyepaxtest.ui.search.CategoryRecyclerAdapter
-import com.eyepax.eyepaxtest.ui.search.SearchActivity
-import com.eyepax.eyepaxtest.ui.search.SearchResultsRecyclerAdapter
-import com.eyepax.eyepaxtest.utils.*
-import com.google.android.material.bottomsheet.BottomSheetBehavior
-import kotlinx.android.synthetic.main.layout_bottom_sheet.*
+import com.eyepax.eyepax.data.entities.Article
+import com.eyepax.eyepax.data.entities.NewsBase
+import com.eyepax.eyepax.data.remote.RetrofitClient
+import com.eyepax.eyepax.data.repository.NewsRepository
+import com.eyepax.eyepax.databinding.ActivityMainBinding
+import com.eyepax.eyepax.ui.base.BaseActivity
+import com.eyepax.eyepax.ui.newsdetails.NewsDetailsActivity
+import com.eyepax.eyepax.ui.search.CategoryRecyclerAdapter
+import com.eyepax.eyepax.ui.search.SearchActivity
+import com.eyepax.eyepax.ui.search.SearchResultsRecyclerAdapter
+import com.eyepax.eyepax.utils.*
 
 class MainActivity : BaseActivity() {
 

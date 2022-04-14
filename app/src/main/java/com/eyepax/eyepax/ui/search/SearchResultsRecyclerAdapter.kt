@@ -1,4 +1,4 @@
-package com.eyepax.eyepaxtest.ui.search
+package com.eyepax.eyepax.ui.search
 
 import android.content.Context
 import android.os.Build
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.eyepax.eyepaxtest.data.entities.Article
-import com.eyepax.eyepaxtest.databinding.LayoutSearchResultsItemBinding
-import com.eyepax.eyepaxtest.utils.MainUtility
+import com.eyepax.eyepax.data.entities.Article
+import com.eyepax.eyepax.databinding.LayoutSearchResultsItemBinding
+import com.eyepax.eyepax.utils.MainUtility
 
 class SearchResultsRecyclerAdapter(private var list: List<Article>, private val context: Context) :
     RecyclerView.Adapter<SearchResultsRecyclerAdapter.SearchHolder>() {
@@ -19,7 +19,7 @@ class SearchResultsRecyclerAdapter(private var list: List<Article>, private val 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): SearchResultsRecyclerAdapter.SearchHolder {
+    ): SearchHolder {
 
         val itemBinding =
             LayoutSearchResultsItemBinding.inflate(
@@ -39,7 +39,7 @@ class SearchResultsRecyclerAdapter(private var list: List<Article>, private val 
 
 
     override fun onBindViewHolder(
-        holder: SearchResultsRecyclerAdapter.SearchHolder,
+        holder: SearchHolder,
         position: Int
     ) {
         val article: Article = list[position]
