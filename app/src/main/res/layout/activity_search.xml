@@ -7,7 +7,7 @@
     tools:context=".ui.main.MainActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayoutTop"
+        android:id="@+id/linerLayoutTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearSeatch"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_margin="@dimen/margin_extra_large"
@@ -47,87 +48,60 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="@dimen/margin_medium"
-                android:src="@drawable/ic_baseline_search_24" />
+                android:src="@drawable/ic_baseline_close_24" />
         </LinearLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardviewNotification"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="@dimen/margin_extra_large"
-            android:layout_marginEnd="@dimen/margin_extra_large"
-            android:layout_marginBottom="@dimen/margin_extra_large"
-            android:backgroundTint="@color/primary"
-            app:cardCornerRadius="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/primary"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linerLayoutTop">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:padding="5dp"
-                android:src="@drawable/ic_baseline_notifications_none_24" />
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+                android:layout_margin="@dimen/margin_small"
+                android:src="@drawable/ic_baseline_filter_alt_24" />
 
-    <TextView
-        android:id="@+id/txtBreakingNews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_extra_large"
-        android:layout_marginTop="@dimen/margin_small"
-        android:text="@string/breaking_news"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayoutTop" />
+            <TextView
+                android:id="@+id/textCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:gravity="center"
+                android:text="@string/filter"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayoutSeeAll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_extra_large"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/txtBreakingNews"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtBreakingNews">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/see_all"
-            android:textColor="@color/secondary" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_medium"
-            android:src="@drawable/ic_baseline_arrow_forward_24" />
-    </LinearLayout>
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerviewBrakingNews"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="@dimen/margin_large"
-        android:backgroundTint="@color/secondary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtBreakingNews" />
+    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerviewCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_large"
-        android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginEnd="@dimen/margin_extra_large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/recyclerviewBrakingNews" />
+        app:layout_constraintStart_toEndOf="@+id/cardviewFilter"
+        app:layout_constraintTop_toBottomOf="@id/linerLayoutTop" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerviewSearch"
@@ -138,7 +112,7 @@
         android:layout_marginEnd="@dimen/margin_extra_large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/recyclerviewCategory" />
+        app:layout_constraintTop_toBottomOf="@id/cardviewFilter" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie_animation"
@@ -153,6 +127,5 @@
         app:lottie_fileName="loading.json"
         app:lottie_imageAssetsFolder="images"
         app:lottie_loop="true" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

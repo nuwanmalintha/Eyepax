@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/labelLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_ultra_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/primary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:background="@drawable/default_edittext"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:paddingStart="@dimen/margin_extra_large"
+        android:paddingEnd="@dimen/margin_extra_large"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelLogin" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:background="@drawable/default_edittext"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/margin_extra_large"
+        android:paddingEnd="@dimen/margin_extra_large"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textUsername" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:background="@drawable/default_button"
+        android:paddingStart="@dimen/margin_extra_large"
+        android:paddingEnd="@dimen/margin_extra_large"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
